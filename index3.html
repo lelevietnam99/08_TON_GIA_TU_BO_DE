@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tôn Giả Tu Bồ Đề – Nghiệp Đức Vi Diệu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #030008;
+            color: #e0e6ed;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        /* Universe Background Effects */
+        .stars {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            background: 
+                radial-gradient(2px 2px at 20px 30px, #ffffff, rgba(0,0,0,0)),
+                radial-gradient(2px 2px at 40px 70px, #ffd700, rgba(0,0,0,0)),
+                radial-gradient(1px 1px at 90px 40px, #ffffff, rgba(0,0,0,0)),
+                radial-gradient(2px 2px at 160px 120px, #a855f7, rgba(0,0,0,0)),
+                radial-gradient(1.5px 1.5px at 230px 190px, #38bdf8, rgba(0,0,0,0)),
+                radial-gradient(2px 2px at 300px 80px, #ffffff, rgba(0,0,0,0));
+            background-repeat: repeat;
+            background-size: 350px 350px;
+            opacity: 0.8;
+            animation: twinkle 8s infinite linear;
+        }
+
+        .nebula {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100vw;
+            height: 100vh;
+            z-index: 2;
+            background: 
+                radial-gradient(circle at 20% 30%, rgba(147, 51, 234, 0.25) 0%, transparent 50%),
+                radial-gradient(circle at 80% 70%, rgba(59, 130, 246, 0.2) 0%, transparent 50%),
+                radial-gradient(circle at 50% 50%, rgba(217, 119, 6, 0.15) 0%, transparent 60%);
+            pointer-events: none;
+        }
+
+        @keyframes twinkle {
+            0% { opacity: 0.6; transform: scale(1); }
+            50% { opacity: 0.9; transform: scale(1.02); }
+            100% { opacity: 0.6; transform: scale(1); }
+        }
+
+        /* Content Container */
+        .container {
+            position: relative;
+            z-index: 10;
+            max-width: 850px;
+            width: 100%;
+            background: rgba(15, 12, 29, 0.75);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            border-radius: 16px;
+            padding: 50px 40px;
+            box-shadow: 0 0 30px rgba(168, 85, 247, 0.2), 0 0 60px rgba(212, 175, 55, 0.1);
+        }
+
+        h1 {
+            color: #fef08a;
+            font-size: 1.8rem;
+            text-align: center;
+            margin-bottom: 30px;
+            text-shadow: 0 0 10px rgba(254, 240, 138, 0.5), 0 0 20px rgba(217, 119, 6, 0.3);
+            letter-spacing: 1px;
+            border-bottom: 1px solid rgba(254, 240, 138, 0.2);
+            padding-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            text-align: justify;
+            color: #f1f5f9;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.8);
+        }
+
+        .quote {
+            font-style: italic;
+            color: #fef3c7;
+            background: rgba(254, 243, 199, 0.05);
+            border-left: 3px solid #fbbf24;
+            padding: 12px 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .dialogue {
+            color: #e0f2fe;
+            font-weight: 500;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 1.4rem;
+            }
+            p {
+                font-size: 0.98rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="nebula"></div>
+
+    <div class="container">
+        <h1>III. TÔN GIẢ TU BỒ ĐỀ – NGHIỆP ĐỨC VI DIỆU</h1>
+        
+        <p>Mùa hạ năm đó, đất nước Ma Kiệt Đà (Magadha) bỗng dưng rơi vào một cơn hạn hán trầm trọng không rõ nguyên nhân. Hơn một tháng trôi qua, trời vẫn nắng gay gắt mà không có lấy một hạt mưa. Sông hồ trợ đáy nên ruộng đồng cũng cạn khô. Dân chúng không cấy trồng được, bắt đầu than vãn. Trong hoàng cung, vua Bình Sa (Bimbisara) như đang ngồi trên đống lửa. Bởi nếu hạn hán cứ tiếp tục sẽ kéo theo vô số hậu quả, đó là nạn đói, cướp bóc, dịch bệnh... Ngài quyết định đến hỏi ý kiến Tôn giả Mục Kiền Liên (Maha Moggallana):</p>
+        
+        <p class="quote dialogue">“Kính bạch Tôn giả, con không biết đã phạm lỗi lầm gì khiến đất trời quở trách gây hạn hán như vậy ạ. Xin Tôn giả chỉ bảo giúp con.”</p>
+        
+        <p>Tôn giả Mục Kiền Liên mỉm cười đáp:</p>
+        
+        <p class="quote dialogue">“Này đại vương, có nhiều chuyện không phải cố ý mà chỉ do ta quên mà thôi.”</p>
+        
+        <p>Vua Bình Sa suy ngẫm một hồi rồi mới sực nhớ, đức vua đã quên khuấy lời hứa sẽ xây dựng tịnh thất cho Tôn giả Tu Bồ Đề khi Ngài trở về khu rừng Khổ Hạnh, nơi mà Thế Tôn đã đắc thành đạo quả, để an cư kiết hạ. Ngay lập tức, quân lính được điều động để thực thi nhiệm vụ.</p>
+        
+        <p>Lúc ấy, Tôn giả Tu Bồ Đề đang lặng lẽ tọa thiền dưới tán của một bóng cây bên bìa rừng. Hơn một tháng ở đây, Tôn giả đã hồi tưởng lại những tháng năm vĩ đại mà Thế Tôn đã trải qua trong suốt sáu năm. Ngài kể lại cho dân làng Uruvela nghe về điều ấy, từng nhành cây, từng ngọn cỏ, những con thú hoang, dòng sông Ni Liên Thiền (Naranjana)… đều trở thành thiêng liêng, yêu mến. Tôn giả vẫn an lạc và an định dù không có một mái lá chở che.</p>
+        
+        <p>Căn tịnh thất nhanh chóng được xây xong chỉ trong một ngày, vua Bình Sa ngay lập tức cúng dường lên Tôn giả Tu Bồ Đề. Ngài im lặng nhận lời. Khi Tôn giả bước vào và ngồi lên chiếc giường tre, vừa mới nhập thiền thì trời cũng bắt đầu những trận sấm vang rền, những cơn mưa kéo tới trút nước hồi sinh ruộng đồng, sông suối, tất cả mọi người đều chạy ra ngoài nhảy múa…</p>
+        
+        <p>Từ trong cung điện, ngắm những trận mưa bay tưới mát khắp vương quốc, vua Bình Sa mới thốt lên rằng:</p>
+        
+        <p class="quote dialogue">“Uy đức của Tôn giả Tu Bồ Đề thật bao trùm cả trời đất. Chỉ vì ta quên lời hứa xây tịnh thất cho Ngài mà chư Thiên không dám làm mưa vì sợ Ngài ướt!”</p>
+        
+        <p>Nói về đức nghiệp của Tôn giả, Thế Tôn đã tán thán rằng:</p>
+        
+        <p class="quote dialogue">“Chí ở nơi không vắng, nghiệp đức vi diệu, là Tỳ kheo Tu Bồ Đề. Hạnh từ bi vô lượng, xứng đáng được cúng dường, cũng là Tỳ kheo Tu Bồ Đề.”</p>
+        
+        <p>Để nghĩ bàn về công hạnh của một vị Thánh Tăng A La Hán qua con mắt của người bình thường thật khó có thể thấy được, dù chỉ một phần nhỏ. Bởi mỗi một suy nghĩ, mỗi một cử chỉ, mỗi một phút giây hiện diện của các Ngài cũng mang lại vô lượng ân đức cho chúng sinh. Có khi các Ngài sống trong rừng sâu, có khi các Ngài lại thuyết lên những bài Pháp âm nhiệm màu để hoằng hóa độ sinh, sống đơn giản, bình an, hiền hòa. Cứ mỗi sáng, các Ngài lại ôm bình bát thong dong trên những nẻo đường để khất thực, rồi chiều về ôn tụng những câu Kinh, tinh cần nhiếp tâm trong thiền định… Thế nhưng, những ai hiểu được cuộc sống ấy thì đó là những điều đẹp nhất, cao thượng nhất mà các Ngài dành tặng cho cuộc đời. Chỉ một nụ cười hiền hậu của các Ngài cũng như nắng ấm ban tặng sức sống cho muôn loài, chỉ một cái nhìn lặng im như sấm sét cũng đủ để thay đổi tâm hồn của một chúng sinh và định hướng cuộc đời họ trong vô lượng kiếp.</p>
+        
+        <p>Về Tôn giả Tu Bồ Đề, những trang sách xưa may mắn hé lộ vài thông tin để ta hiểu hơn lời khen tặng của Thế Tôn về công hạnh của Ngài.</p>
+        
+        <p>Đó là những khi đi khất thực, Tôn giả đứng ở cửa nhà và phát khởi thiền tâm – trải tâm từ hướng đến thí chủ. Chỉ khi thí chủ đến gần thì ngài mới xuất khỏi thiền và thọ lãnh vật thực. Vì thế, tâm của thí chủ nhu nhuyến hơn và sự tôn kính cũng mạnh mẽ hơn trước khi họ cúng dường. Nhìn từ bên ngoài, Ngài cũng khất thực như những Tỳ kheo khác, các thí chủ cũng hoan hỉ cúng dường Tăng chúng, nhưng công đức của họ vượt trội vì đã phát khởi tâm thành và niềm tin cao tột.</p>
+        
+        <p>Rồi những khi trước đại chúng đông đảo, Tôn giả thuyết Pháp một cách không giới hạn bởi lòng từ cũng theo lời Pháp lan tỏa đến từng chúng sinh. Mỗi câu nói đều như quan tâm, vỗ về, bao dung, khuyến tấn, khai mở cho chúng sinh vô lượng ân đức. Đến cả những chúng sinh vô hình, những loài côn trùng nhỏ bé hay cỏ cây hoa lá cũng đều an vui trong Pháp hội của Ngài.</p>
+
+        <p>Trong một bài tự sự, Tôn giả đã bộc bạch rằng, những kết quả thù thắng mà Ngài đạt được hôm nay đều nhờ vào việc đã cúng dường những Đức Phật quá khứ. Suốt cả trăm ngàn kiếp, Ngài thường tu tập hạnh tôn kính Phật như là pháp tối thượng. Trước Đức Phật, lúc nào Tôn giả cũng thấy mình chỉ như một người “cùng tử” bé nhỏ, đứng nép mình trong lòng từ bi của Người.</p>
+    </div>
+</body>
+</html>

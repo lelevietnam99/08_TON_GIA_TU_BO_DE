@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thơ Tụng Về Tôn Giả Tu Bồ Đề</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #030008;
+            color: #e0e6ed;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        /* Universe Background Effects */
+        .stars {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            background: 
+                radial-gradient(2px 2px at 20px 30px, #ffffff, rgba(0,0,0,0)),
+                radial-gradient(2px 2px at 40px 70px, #ffd700, rgba(0,0,0,0)),
+                radial-gradient(1px 1px at 90px 40px, #ffffff, rgba(0,0,0,0)),
+                radial-gradient(2px 2px at 160px 120px, #a855f7, rgba(0,0,0,0)),
+                radial-gradient(1.5px 1.5px at 230px 190px, #38bdf8, rgba(0,0,0,0)),
+                radial-gradient(2px 2px at 300px 80px, #ffffff, rgba(0,0,0,0));
+            background-repeat: repeat;
+            background-size: 350px 350px;
+            opacity: 0.8;
+            animation: twinkle 8s infinite linear;
+        }
+
+        .nebula {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100vw;
+            height: 100vh;
+            z-index: 2;
+            background: 
+                radial-gradient(circle at 20% 30%, rgba(147, 51, 234, 0.25) 0%, transparent 50%),
+                radial-gradient(circle at 80% 70%, rgba(59, 130, 246, 0.2) 0%, transparent 50%),
+                radial-gradient(circle at 50% 50%, rgba(217, 119, 6, 0.15) 0%, transparent 60%);
+            pointer-events: none;
+        }
+
+        @keyframes twinkle {
+            0% { opacity: 0.6; transform: scale(1); }
+            50% { opacity: 0.9; transform: scale(1.02); }
+            100% { opacity: 0.6; transform: scale(1); }
+        }
+
+        /* Content Container */
+        .container {
+            position: relative;
+            z-index: 10;
+            max-width: 850px;
+            width: 100%;
+            background: rgba(15, 12, 29, 0.75);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            border-radius: 16px;
+            padding: 50px 40px;
+            box-shadow: 0 0 30px rgba(168, 85, 247, 0.2), 0 0 60px rgba(212, 175, 55, 0.1);
+        }
+
+        h1 {
+            color: #fef08a;
+            font-size: 1.8rem;
+            text-align: center;
+            margin-bottom: 30px;
+            text-shadow: 0 0 10px rgba(254, 240, 138, 0.5), 0 0 20px rgba(217, 119, 6, 0.3);
+            letter-spacing: 1px;
+            border-bottom: 1px solid rgba(254, 240, 138, 0.2);
+            padding-bottom: 20px;
+        }
+
+        .poem {
+            text-align: center;
+            line-height: 2;
+            font-size: 1.05rem;
+            color: #f1f5f9;
+        }
+
+        .stanza {
+            margin-bottom: 24px;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.8);
+        }
+
+        .namo {
+            font-weight: 600;
+            color: #fef08a;
+            font-size: 1.15rem;
+            margin-top: 30px;
+            text-shadow: 0 0 10px rgba(254, 240, 138, 0.5);
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 1.4rem;
+            }
+            .poem {
+                font-size: 0.98rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="nebula"></div>
+
+    <div class="container">
+        <h1>VI. THƠ TỤNG VỀ TÔN GIẢ TU BỒ ĐỀ</h1>
+        
+        <div class="poem">
+            <div class="stanza">
+                Giữa khu rừng vắng mênh mông<br>
+                Bóng người ẩn sĩ ung dung toạ thiền<br>
+                Dứt bỏ chấp ngã ưu phiền<br>
+                Tâm hồn bừng tỏ như nghìn ánh dương
+            </div>
+
+            <div class="stanza">
+                Chư Thiên tấu nhạc cúng dường<br>
+                Rải hoa thơm ngát con đường Người đi<br>
+                Bậc A La Hán uy nghi<br>
+                Trí tuệ trùm phủ, từ bi vô bờ
+            </div>
+
+            <div class="stanza">
+                Tĩnh lặng không gợn mặt hồ<br>
+                Thấy mình tan biến hư vô không lời<br>
+                Thế Tôn khen ngợi đến Người<br>
+                Giải Không Đệ Nhất muôn đời lưu danh
+            </div>
+
+            <div class="stanza">
+                Trải qua bao kiếp tu hành<br>
+                Lòng tôn kính Phật chân thành thiết tha<br>
+                Dâng Người tuyệt đối bao la<br>
+                Còn con nhỏ bé như là cỏ cây
+            </div>
+
+            <div class="stanza">
+                Ngồi lặng yên giữa trời mây<br>
+                Đi qua cuộc sống từng ngày yêu thương<br>
+                Yêu từng lối nhỏ con đường<br>
+                Yêu từng trang sách quê hương thanh bình
+            </div>
+
+            <div class="stanza">
+                Nguyện lòng thương khắp chúng sinh<br>
+                Cá bơi dưới nước, cánh chim ngang trời<br>
+                Xin yêu từng chiếc lá rơi<br>
+                Từng cánh hoa nhỏ cho đời thêm vui
+            </div>
+
+            <div class="stanza">
+                Biết thân giả tạm mà thôi<br>
+                Vô thường sinh diệt hợp rồi lại tan<br>
+                Nên lòng chẳng dám tham lam<br>
+                Ít muốn, biết đủ, phước làm siêng năng
+            </div>
+
+            <div class="stanza">
+                Tin sâu Nhân quả công bằng<br>
+                Một lòng phụng sự chẳng màng riêng tư<br>
+                Nương theo Phật đấng đại từ<br>
+                Tinh chuyên thiền định diệt trừ vô minh
+            </div>
+
+            <div class="stanza">
+                Chúng sinh tình với vô tình<br>
+                Trọn thành Phật đạo tâm linh rạng ngời.
+            </div>
+
+            <div class="namo">
+                Nam Mô Tu Bồ Đề Tôn Giả (3 lần)
+            </div>
+        </div>
+    </div>
+</body>
+</html>

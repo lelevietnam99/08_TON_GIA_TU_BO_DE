@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tôn Giả Tu Bồ Đề – Mục Lục</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #030008;
+            color: #e0e6ed;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        /* Universe Background Effects */
+        .stars {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            background: 
+                radial-gradient(2px 2px at 20px 30px, #ffffff, rgba(0,0,0,0)),
+                radial-gradient(2px 2px at 40px 70px, #ffd700, rgba(0,0,0,0)),
+                radial-gradient(1px 1px at 90px 40px, #ffffff, rgba(0,0,0,0)),
+                radial-gradient(2px 2px at 160px 120px, #a855f7, rgba(0,0,0,0)),
+                radial-gradient(1.5px 1.5px at 230px 190px, #38bdf8, rgba(0,0,0,0)),
+                radial-gradient(2px 2px at 300px 80px, #ffffff, rgba(0,0,0,0));
+            background-repeat: repeat;
+            background-size: 350px 350px;
+            opacity: 0.8;
+            animation: twinkle 8s infinite linear;
+        }
+
+        .nebula {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100vw;
+            height: 100vh;
+            z-index: 2;
+            background: 
+                radial-gradient(circle at 20% 30%, rgba(147, 51, 234, 0.25) 0%, transparent 50%),
+                radial-gradient(circle at 80% 70%, rgba(59, 130, 246, 0.2) 0%, transparent 50%),
+                radial-gradient(circle at 50% 50%, rgba(217, 119, 6, 0.15) 0%, transparent 60%);
+            pointer-events: none;
+        }
+
+        @keyframes twinkle {
+            0% { opacity: 0.6; transform: scale(1); }
+            50% { opacity: 0.9; transform: scale(1.02); }
+            100% { opacity: 0.6; transform: scale(1); }
+        }
+
+        /* Content Container */
+        .container {
+            position: relative;
+            z-index: 10;
+            max-width: 850px;
+            width: 100%;
+            background: rgba(15, 12, 29, 0.75);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            border-radius: 16px;
+            padding: 50px 40px;
+            box-shadow: 0 0 30px rgba(168, 85, 247, 0.2), 0 0 60px rgba(212, 175, 55, 0.1);
+        }
+
+        h1 {
+            color: #fef08a;
+            font-size: 1.8rem;
+            text-align: center;
+            margin-bottom: 10px;
+            text-shadow: 0 0 10px rgba(254, 240, 138, 0.5), 0 0 20px rgba(217, 119, 6, 0.3);
+            letter-spacing: 1px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #cbd5e1;
+            font-size: 1rem;
+            margin-bottom: 30px;
+            border-bottom: 1px solid rgba(254, 240, 138, 0.2);
+            padding-bottom: 20px;
+        }
+
+        .nav-list {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .nav-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 18px 24px;
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            border-radius: 12px;
+            text-decoration: none;
+            color: #f1f5f9;
+            font-size: 1.05rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .nav-item:hover {
+            background: rgba(212, 175, 55, 0.15);
+            border-color: #fbbf24;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(212, 175, 55, 0.2);
+            color: #fef08a;
+        }
+
+        .nav-item .part-number {
+            color: #fbbf24;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+
+        .nav-item .arrow {
+            color: #a855f7;
+            font-size: 1.2rem;
+            transition: transform 0.3s ease;
+        }
+
+        .nav-item:hover .arrow {
+            transform: translateX(5px);
+            color: #fef08a;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 1.4rem;
+            }
+            .nav-item {
+                padding: 14px 18px;
+                font-size: 0.95rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="nebula"></div>
+
+    <div class="container">
+        <h1>TÔN GIẢ TU BỒ ĐỀ</h1>
+        <p class="subtitle">Giải Không Đệ Nhất – Danh Sách Các Phần</p>
+
+        <div class="nav-list">
+            <a href="index1.html" class="nav-item">
+                <span><span class="part-number">Phần I:</span> Tôn Giả Tu Bồ Đề – Xuất Thân – Chứng Đạo</span>
+                <span class="arrow">&rarr;</span>
+            </a>
+            <a href="index2.html" class="nav-item">
+                <span><span class="part-number">Phần II:</span> Tôn Giả Tu Bồ Đề – Giải Không Đệ Nhất</span>
+                <span class="arrow">&rarr;</span>
+            </a>
+            <a href="index3.html" class="nav-item">
+                <span><span class="part-number">Phần III:</span> Tôn Giả Tu Bồ Đề – Nghiệp Đức Vi Diệu</span>
+                <span class="arrow">&rarr;</span>
+            </a>
+            <a href="index4.html" class="nav-item">
+                <span><span class="part-number">Phần IV:</span> Kết Luận Về Tôn Giả Tu Bồ Đề</span>
+                <span class="arrow">&rarr;</span>
+            </a>
+            <a href="index5.html" class="nav-item">
+                <span><span class="part-number">Phần V:</span> Tôn Giả Tu Bồ Đề – Ý Nghĩa Độ Mệnh</span>
+                <span class="arrow">&rarr;</span>
+            </a>
+            <a href="index6.html" class="nav-item">
+                <span><span class="part-number">Phần VI:</span> Thơ Tụng Về Tôn Giả Tu Bồ Đề</span>
+                <span class="arrow">&rarr;</span>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
